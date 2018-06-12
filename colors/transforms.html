@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            box-sizing: border-box;
+            background-color: red;
+            border-radius: 16px;
+            height: 100px;
+            margin: 20px;
+            width: 100px;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .rotated:hover {
+            transform: rotate(45deg);
+            transition: transform 2s;
+        }
+
+        .skewed:hover {
+            transform: skew(-10deg, -15deg);
+            transition: transform 2s;
+        }
+
+        .scaled {
+            transform: scale(2, 0.5);
+        }
+
+        .ddd {
+            transform: perspective(900px) rotateY(90deg);
+            transition: transform 1s;
+        }
+        
+        .ddd:hover {
+    </style>
+</head>
+
+<body>
+    <div class="box rotated">1</div>
+    <div class="box">2</div>
+    <div class="box skewed">3</div>
+    <div class="box scaled">4</div>
+    <div class="box ddd">5</div>
+</body>
+
+</html>
