@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .box {
+            animation: rollingball 5s linear infinite;
+            background: linear-gradient(to bottom, red 10%, green, yellow);
+            border-radius: 100%;
+            height: 200px;
+            left: 65%;
+            top: 20%;
+            position: absolute;
+            width: 200px;
+        }
+        
+        .box1 {
+            animation: bouncingball 2s ease-in infinite;
+            background: linear-gradient(to bottom, red 10%, green, yellow);
+            border-radius: 100%;
+            height: 200px;
+            left: 60%;
+            top: 60%;
+            position: absolute;
+            width: 200px;
+        }
+        
+        .planet {
+            animation: planet 2s linear infinite;
+            background: linear-gradient(to bottom, red 10%, green, yellow);
+            border-radius: 100%;
+            height: 50px;
+            left: 60%;
+            top: 20%;
+            position: absolute;
+            width: 50px;
+        }
+                   /*label*/
+        @keyframes rollingball {
+            0% { left: 65%; transform: rotateY(0deg) rotate(0deg), }
+            50% { left: 30%; top: 10px; transform: rotateY(-360deg) rotate(-360deg); }
+            100% { left: 65%; transform:rotateY(0deg) rotate(0deg); }
+        }  
+        
+        @keyframes bouncingball {
+            0% { top: 60%; left: 30%; transform: scaleX(1.2); }
+            25% {top: 30%; left: 60%; transform: scaleY(1.2); }
+            50% {top: 10%; left: 30%; transform: scaleX(1.2); }
+            75% {top: 30%; left: 0%; transform: scaleY(1.2);  }
+            100% {top: 60%; left: 30%; transform: scaleX(1.2); }
+        }
+       
+        @keyframes planet {
+            0% { bottom: 0%; transform: rotate(180deg);}
+            25% {transform: rotate(45deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="planet"></div>
+</body>
+</html>

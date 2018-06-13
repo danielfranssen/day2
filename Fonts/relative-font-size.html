@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        div {
+
+            /*em is relative, pixels are static*/
+            font-size: 1.3em;
+        }
+
+        .rem {
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Normal font-size</p>
+    <div>This is a font size<br />
+        <div>This is a div inside a div.That means it is relative to the parent size. Instead use "rem"</div>
+    </div>
+    <div class="rem">This uses rem
+        <div>div inside a rem</div>
+    </div>
+    <div></div>
+</body>
+
+</html>
